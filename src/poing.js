@@ -7,7 +7,7 @@ const new_game_text = "Click anywhere to start the game"
 const canvas = document.querySelector('#canvas')
 const ctx = canvas.getContext('2d')
 // just to separate the field
-const midfield = new midField(ctx)
+const midfield = new MidField(ctx)
 
 // scores
 let ps = new Score(ctx, 0, Math.floor(650 / 2) - 20) // player score

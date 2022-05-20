@@ -1,4 +1,4 @@
-class midField{
+class MidField{
     constructor(ctx){
         this.ctx = ctx
         this.x = Math.floor(650 / 2) - 5
@@ -82,9 +82,8 @@ class Player{
 }
 
 class Enemy{
-    constructor(ctx, ball){
+    constructor(ctx){
         this.ctx = ctx
-        this.ball = ball
         this.y = INITIAL_POSITION_PLAYER
         this.x = COMPUTER_X
         this.width = BLOCK_SIZE - 1
@@ -153,9 +152,9 @@ class PongBall{
     }
 
     collision(){
-        if(this.y == 0){
+        if(this.y <= 0){
             this.directionY = false
-        } else if(this.y == 480 - this.size){
+        } else if(this.y >= 480 - this.size){
             this.directionY = true
         }
         for(let c = 0; c < PLAYER_BODY.length; c++){
