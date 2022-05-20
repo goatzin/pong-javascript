@@ -1,10 +1,11 @@
-const GAME_CLOCK = 1
-const COLOR = '#e8e8e8'
+const GAME_CLOCK = 1 
+const COLOR = '#e8e8e8' 
 const PLAYER_X = 0
-const COMPUTER_X = 650
+const COMPUTER_X = 631
 const BLOCK_SIZE = 20
 const HEIGHT_PLAYER = 80
 const PLAYER_SPEED = 20 
+const COMPUTER_SPEED = 4
 const INITIAL_POSITION_PLAYER = Math.floor((480 / 2) - 40) // y
 const INITIAL_POSITION_BALL = [
     Math.floor((650 / 2) - 10), // x
